@@ -38,4 +38,24 @@ int main(){
     Mes[10].num = 7;
     Mes[11].nome = (char*) "Novembro";
     Mes[11].num = 11;
+
+    struct no N[12];
+    N[0].info = Mes[0];
+    N[1].info = Mes[1];
+    N[2].info = Mes[2];
+    N[3].info = Mes[3];
+    N[4].info = Mes[4];
+    N[5].info = Mes[5];
+    N[6].info = Mes[6];
+    N[7].info = Mes[7];
+    N[8].info = Mes[8];
+    N[9].info = Mes[9];
+    N[10].info = Mes[10];
+    N[11].info = Mes[11];
+    
+    N[0].esq = &N[1];
+    N[0].dir = &N[2];
+    N[1].dir = &N[3];
+
 }
+
