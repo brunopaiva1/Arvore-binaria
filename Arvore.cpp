@@ -55,7 +55,16 @@ int main(){
     
     N[0].esq = &N[1];
     N[0].dir = &N[2];
-    N[1].dir = &N[3];
+    N[1].esq = &N[3];
+    N[2].esq = &N[4];
+    N[2].dir = &N[5];
+    N[3].dir = &N[6];
+    N[4].esq = &N[7];
+    N[5].esq = &N[8];
+    N[6].dir = &N[9];
+    N[7].esq = &N[10];
+    N[8].esq = &N[11];
 
+    return 0;
 }
 
